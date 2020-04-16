@@ -2,9 +2,33 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   color: #555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 /* Colors used include:
       - #006060;
       - rgb alpha value of the color above
 */
+table{
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-spacing: 0;
+}
+
+th{
+  background-color: #006060;
+  color: white;
+}
+th, td{
+  padding: 1rem;
+}
+
+
+td{
+  border-bottom: 1px solid rgb(194, 194, 194); 
+}
+
+tr:hover{
+  background-color: #00606023;
+}

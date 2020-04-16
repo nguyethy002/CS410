@@ -2,4 +2,51 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.1em;
   color: #555;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 300px;
+}
+
+.cat-container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cat-image{
+  padding: 0.75rem;
+}
+#two{
+  filter: grayscale();
+}
+#three{
+  filter: blur(5px);
+}
+#four{
+  filter: invert();
+}
+#five{
+  filter: brightness(40%);
+}
+#six{
+  filter: saturate(200%);
+}
+#seven{
+  filter: sepia();
+}
+#eighth{
+  filter: opacity(50%);
+}
+
+@media screen and (max-width: 640px){
+  .cat-container{
+    flex-direction: column;
+  }
 }
