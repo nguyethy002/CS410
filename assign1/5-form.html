@@ -9,43 +9,59 @@
   </head>
   <body>
     <!-- add your code below -->
-    <div class = "form">
-      <h1>INTRO SURVEY</h1>
-        <div class = "form-user-info">
-          <div id = "to-display-row">
-            <h2>Name</h2>
-            <p>(optional)</p>
-          </div>
-          <input type="text" name = "name">
-          <div id = "to-display-row">
-            <h2>Email </h2>
-            <p>(required)</p>
-          </div>
-          <input type="text" email = "email">
+    <div class="form">
+      <h2>INTRO SURVEY</h2>
+      <div class="form-user-info">
+        <div id="to-display-row">
+          <h3>Name</h3>
+          <p>(required)</p>
         </div>
-        <h2>Registration status</h2>
+        <label for="name">
+          <input type="text" name="name" required />
+        </label>
+        <div id="to-display-row">
+          <h3>Email</h3>
+          <p>(required)</p>
+        </div>
+        <label for="email">
+          <input type="text" email="email" required />
+        </label>
+      </div>
+      <div class ="form-user-registration">
+        <h3>Registration status</h3>
+        <label for="Registration"></label>
         <select>
           <option value="Registered">Registered</option>
           <option value="Waitlist">Waitlist</option>
           <option value="Other">Other</option>
         </select>
-        <h2>Class Section</h2>
-        <div id = "to-display-row">
-          <input type="radio" CS410P email = "email">
-          <input type="radio" email = "email">
-        </div>
-        <h2>Have you taken any of the following course? </h2>
+        <h3>Class Section</h3>
+        <input type="radio" id="CS410" class="CS410" />
+        <label for="CS410">CS410</label>
+        <input type="radio" id="CS510" class="CS510" />
+        <label for="CS510">CS510</label>
+      </div>
+      <div class="form-class-name-info">
+        <h3>Have you taken any of the following course?</h3>
         <div>
-          <input type="radio" CS410P email = "email">
-          <input type="radio" email = "email">
-          <input type="radio" CS410P email = "email">
-          <input type="radio" email = "email">
+          <input type="radio" id="PL" className="PL" />
+          <label for="PL">Programing Language</label>
         </div>
-        <h2>Anything else?</h2>
+        <div>
+          <input type="radio" id="OS" className="OS" />
+          <label for="OS">Operating System</label>
+        </div>
+        <div>
+          <input type="radio" id="FD" className="FD" />
+          <label for="FD">Fullstack Web Development</label>
+        </div>
+      </div>
+      <div>
+        <h3>Anything else?</h3>
         <textarea></textarea>
-        <br>
-        <div id = "to-display-row">
-        <button id = "submit">Submit</button>
+      </div>
+      <div class="form-button">
+        <button id="submit">Submit</button>
         <button>Reset</button>
       </div>
     </div>

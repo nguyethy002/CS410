@@ -5,14 +5,21 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-h1{
-  margin: 0;
+h2{
   text-align: center;
   color:  #0173a0;
 }
-
+p{
+  color: #0173a0;
+}
+h2,h3,p{
+  margin: 0.5rem 0 0.5rem 0;
+}
 input[type="text"],select,option,textarea{
   width: 100%;
   height: 2rem;
@@ -25,12 +32,26 @@ textarea{
 button{
   width: 50%;
   height: 2rem;
-  margin: 1rem;
   border: none;
+  color: #0173a0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 .form{
   background-color: white;
-  padding: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.form-class-name-info{
+  display: flex;
+  flex-direction: column;
+}
+.form-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #to-display-row{
@@ -41,4 +62,6 @@ button{
 
 #submit{
   background-color:#0173a0;
+  margin-right: 0.5rem;
+  color: white;
 }
