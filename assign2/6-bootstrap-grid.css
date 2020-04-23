@@ -10,3 +10,15 @@
 }
 
 /* Add your code here */
+div.col-sm-6.col-md-4,.col-md-8{
+  background-color: purple;
+}
+div.col-6.col-sm-4{
+  background-color: green;
+}
+div.col-2{
+  background-color: orange;
+}
+div.col-3.col-md-4{
+  background-color: darkcyan;
+}

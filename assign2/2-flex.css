@@ -19,3 +19,9 @@
 }
 
 /* Add your code here */
+.flex-container{
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap; 
+}
+
