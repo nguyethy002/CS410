@@ -15,12 +15,14 @@
 .grid-container{
   display: grid;
   grid-gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px, auto);
   grid-template-areas: 
     "item1  item1  item3  item3  item3"
     "item2  item4  item3  item3  item3"
     "item5  item5  item3  item3  item3"
     "item5  item5  item6  item7  item8"
-    "item9  item10 item10 item10 item10"
+    "item9  item10 item10 item10 item10";
 }
 .item10{grid-area:item10;}
 .item9{grid-area:item9;}
@@ -33,3 +35,16 @@
 .item2{grid-area:item2;}
 .item1{grid-area:item1;}
 
+@media screen and (max-width: 414px){
+  .grid-container{    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "item1  item1  item2  item4"
+      "item5  item5  item6  item9"    
+      "item5  item5  item6  item9"    
+      "item10  item10 item10 item10";
+  }
+  .item8{display: none;}
+  .item7{display: none;}
+  .item3{display: none;}
+}

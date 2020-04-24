@@ -14,7 +14,9 @@
 /* Add your code here */
 .grid-container{
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 5px;;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
   grid-template-areas: 
     "item10 item10 item1 item2"
     "item10 item10 item3 item2"

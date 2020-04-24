@@ -25,3 +25,25 @@
   flex-wrap: wrap; 
 }
 
+.flex-container :nth-child(8), .flex-container :nth-child(1), .flex-container :nth-child(5){
+  order: -5;
+}
+
+.flex-container :nth-child(4){
+  order: -4;
+  
+}
+.flex-container :nth-child(3){
+  order: -3;
+  
+}
+.flex-container :nth-child(2), .flex-container :nth-child(9){
+  order: -2;  
+}
+.flex-container :nth-child(7){
+  order: -1;
+}
+.flex-container :nth-child(6){
+  order: 0;
+}
+

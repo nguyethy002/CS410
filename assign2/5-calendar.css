@@ -16,7 +16,7 @@ li{
   border-color: rgb(163, 155, 155);
   padding: .5rem;
   text-align: center;
-  width: 50%;
+  width: 70%;
 }
 .calender-week-date{
   display: flex;
@@ -38,7 +38,7 @@ li{
   align-items: center;
   font-weight: 700;
 }
-h4{
+h1{
   margin: 0;
   color: white;
   background-color: black;
@@ -51,7 +51,7 @@ h4{
 
 @media screen and (max-width: 768px){
   .calendar-container{
-    width: 388px;
+    width: 500px;
   }
 }
 
