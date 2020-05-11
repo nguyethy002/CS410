@@ -1,5 +1,5 @@
 // Enter your code here
-document.getElementById('form').addEventListener('click', function(event){
+document.getElementById('form').addEventListener('submit', function(event){
   event.preventDefault()
 });
 
@@ -22,18 +22,22 @@ function toStop(){
   button.style.boxShadow = "none";
 
   if(flag == -1){
-    button.value = "Stop";
     flag = 0;
     toSet = clearInterval(toSet);
     button.value = "Start";
-    button.style.backgroundColor = "#dc3545";
-    button.style.borderColor = "#dc3545";
+    button.style.backgroundColor = "blue";
+    button.style.borderColor = "blue";
+    document.getElementById("interval").disabled = false;
   }
   else{
     button.value = "Stop";
-    button.style.backgroundColor = "re";
-    button.style.borderColor = "blue";
+    button.style.backgroundColor = "#dc3545";
+    button.style.borderColor = "#dc3545";
     toSet = setInterval(changeColor,time);
+    document.getElementById("interval").disabled = true;
     flag = -1;
   }
 }
+
+//reference for generate random color
+//https://www.w3resource.com/javascript-exercises/javascript-math-exercise-40.php

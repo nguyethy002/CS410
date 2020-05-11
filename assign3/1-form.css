@@ -68,6 +68,9 @@ button{
   color: white;
 }
 
+fieldset{
+  border-color: #0173a0;
+}
 
 @media screen and (max-width: 768px){
   .form{

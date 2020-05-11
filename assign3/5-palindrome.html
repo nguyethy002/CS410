@@ -11,15 +11,15 @@
     />
   </head>
   <body class="bg-info">
-    <form class="bg-light border rounded w-50 mx-auto mt-5 p-3">
+    <form class="bg-light border rounded w-50 mx-auto mt-5 p-3" id="form">
       <h2 class="mt-2 mb-4">Palindrome</h2>
       <div class="form-group w-50">
-        <label for="number">Enter a positive number:</label>
-        <input type="number" id="number" name="number" min="1" />
+        <label for="number">Enter a positive number and press enter key:</label>
+        <input type="number" id="number" name="number" min="1" onchange="palindromeCheck()"/>
       </div>
       <div class="form-group">
         <label>Is this a palindrome?</label>
-        <div id="result">No</div>
+        <div id="result"></div>
       </div>
     </form>
     <script src="5-palindrome.js"></script>

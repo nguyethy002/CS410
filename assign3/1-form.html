@@ -8,62 +8,87 @@
     <title>JavaScript Form Exercise</title>
   </head>
   <body>
+    <form class="form" id="form">
+      <fieldset>
+        <legend>
+          <h2>INTRO SURVEY</h2>
+        </legend>
+        <div class="form-user-info">
+          <div id="to-display-row">
+            <h3>Name</h3>
+            <p>(required)</p>
+          </div>
+          <label for="name">
+            <input type="text" id="name" name="name" required />
+          </label>
+          <div id="to-display-row">
+            <h3>Email</h3>
+            <p>(required)</p>
+          </div>
+          <label for="email">
+            <input type="text" id="email" email="email" required />
+          </label>
+        </div>
+        <div class="form-user-registration">
+          <h3>Registration status</h3>
+          <label for="Registration"></label>
+          <select id="user-registration">
+            <option value="Registered">Registered</option>
+            <option value="Waitlist">Waitlist</option>
+            <option value="Other">Other</option>
+          </select>
+          <h3>Class Section</h3>
+          <div id="class-section">
+            <input type="radio" id="CS410" name="CS410" value="CS410" />
+            <label for="CS410">CS410</label>
+            <input type="radio" id="CS510" name="CS510" value="CS510" />
+            <label for="CS510">CS510</label>
+          </div>
+        </div>
+        <div class="form-class-name-info">
+          <h3>Have you taken any of the following course?</h3>
+          <div id="class-name-info">
+            <div>
+              <input
+                type="radio"
+                id="PL"
+                name="PL"
+                value="Programing Language"
+              />
+              <label for="PL">Programing Language</label>
+            </div>
+            <div>
+              <input type="radio" id="OS" name="OS" value="Operating System" />
+              <label for="OS">Operating System</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="FD"
+                name="FD"
+                value="Fullstack Web Development"
+              />
+              <label for="FD">Fullstack Web Development</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>Anything else?</h3>
+          <textarea id="AE"></textarea>
+        </div>
+        <div class="form-button">
+          <button
+            id="submit"
+            type="submit"
+            value="submit"
+            onclick="submitFunction()"
+          >
+            Submit
+          </button>
+          <button id="reset" type="reset" value="reset">Reset</button>
+        </div>
+      </fieldset>
+    </form>
     <script src="1-form.js"></script>
-    <div class="form">
-      <h2>INTRO SURVEY</h2>
-      <div class="form-user-info">
-        <div id="to-display-row">
-          <h3>Name</h3>
-          <p>(required)</p>
-        </div>
-        <label for="name">
-          <input type="text" id="name" name="name" required />
-        </label>
-        <div id="to-display-row">
-          <h3>Email</h3>
-          <p>(required)</p>
-        </div>
-        <label for="email">
-          <input type="text" id="email" email="email" required />
-        </label>
-      </div>
-      <div class ="form-user-registration">
-        <h3>Registration status</h3>
-        <label for="Registration"></label>
-        <select>
-          <option  value="Registered">Registered</option>
-          <option  value="Waitlist">Waitlist</option>
-          <option  value="Other">Other</option>
-        </select>
-        <h3>Class Section</h3>
-        <input type="radio" id="CS410" class="CS410" />
-        <label for="CS410">CS410</label>
-        <input type="radio" id="CS510" class="CS510" />
-        <label for="CS510">CS510</label>
-      </div>
-      <div class="form-class-name-info">
-        <h3>Have you taken any of the following course?</h3>
-        <div>
-          <input type="radio" id="PL" className="PL" />
-          <label for="PL">Programing Language</label>
-        </div>
-        <div>
-          <input type="radio" id="OS" className="OS" />
-          <label for="OS">Operating System</label>
-        </div>
-        <div>
-          <input type="radio" id="FD" className="FD" />
-          <label for="FD">Fullstack Web Development</label>
-        </div>
-      </div>
-      <div>
-        <h3>Anything else?</h3>
-        <textarea></textarea>
-      </div>
-      <div class="form-button">
-        <button id="submit" onclick="submitFunction()">Submit</button>
-        <button>Reset</button>
-      </div>
-    </div>
   </body>
 </html>

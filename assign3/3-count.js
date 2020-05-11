@@ -6,3 +6,5 @@ function highlight(){
   var result = text.replace(new RegExp(input, 'ig'), (match) =>`<change>${match}</change>`);
   document.getElementById('intro').innerHTML = result;
 }
+//reference
+//https://bitsofco.de/a-one-line-solution-to-highlighting-search-matches/

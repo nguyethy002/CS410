@@ -1,8 +1,13 @@
 // Enter your code here
 function pharse(){
   var input = document.getElementById("userinput").value;
-  console.log(userinput);
-  var result = input.match(/[^\.!\?]+[\.!\?]+/g);
+  var result = input.split(new RegExp(/\,|\.|\!|\?/, 'g'));
+  var hold = " ";
+  for(var i = 0; i < result.length; i++){
+    hold += `${result[i]}  </br> <hr>`;
+  }
+  console.log( "This is hold ", hold);
   console.log(result);
-  // document.getElementById('intro').innerHTML = result;
+  console.log(result.length);
+  document.getElementById('results').innerHTML = hold;
 }
